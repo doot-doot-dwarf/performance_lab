@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #add_executable(test1 test1.cpp test1.h)
 #target_compile_options(test1 -Wall -Wextra --std=c++14)
 #add_executable(${PROJECT_NAME} test1.cpp test1.h)
-add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR})
+add_executable(${PROJECT_NAME} test1.cpp)
 target_compile_options(${PROJECT_NAME} PUBLIC -Wall -Wextra --std=c++14 -ggdb)
 set_target_properties( ${PROJECT_NAME}
     PROPERTIES
