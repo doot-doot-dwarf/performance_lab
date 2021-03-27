@@ -43,13 +43,13 @@ add_subdirectory(tests)
 
 add_executable(${PROJECT_NAME} main.cpp misc.cpp)
 target_compile_options(${PROJECT_NAME} PUBLIC -Wall -Wextra --std=c++14 -ggdb)
-set_target_properties( ${PROJECT_NAME}
-    PROPERTIES
-	OUTPUT_NAME "${PROJECT_NAME}.exe"
-	ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
-	LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
-	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
-)
+#set_target_properties( ${PROJECT_NAME}
+#    PROPERTIES
+#	OUTPUT_NAME "${PROJECT_NAME}.exe"
+#	ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
+#	LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
+#	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}"
+#)
 enable_testing()
 # Download and unpack googletest at configure time
 
